@@ -14,16 +14,17 @@ Before(async function(){
     pages=await context.newPage();
     pageObject.page=pages;
 });
-After(async function(scenario) {
-    if(scenario.result?.status==Status.FAILED){
-       // setDefaultTimeout(2000);
-        const img=await pageObject.page.screenshot({path:`./test-results/Screenshots/${scenario.pickle.name}`,type:"png"});
-        await this.attach(img,"image/png");
-    }
-   logger.info("Browser are closed");
-    //await  pageObject.page.close();
-    await browser.close();
+// After(async function(scenario) {
+//     if(scenario.result?.status==Status.FAILED){
+//        // setDefaultTimeout(2000);
+//         const img=await pageObject.page.screenshot({path:`./test-results/Screenshots/${scenario.pickle.name}`,type:"png"});
+//         await this.attach(img,"image/png");
+//     }
+//    logger.info("Browser are closed");
+//     //await  pageObject.page.close();
+//     await browser.close();
    
-//    context.close();
-});
+// //    context.close();
+// }
+//);
 

@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.47.1",
+    "@playwright/test": "^1.54.1",
     "@types/node": "^20.14.10",
     "multiple-cucumber-html-reporter": "^3.6.2"
   },
