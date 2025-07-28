@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="35.591685465999994" tests="7">
+  <testcase classname="API verification" name="test the API" time="3.5262083959999995">
+    <system-out><![CDATA[Given Test get request "https://reqres.in/api/users?page=2"...............passed
+When Test post request "https://reqres.in/api/users"......................passed
+And Test delete request "https://reqres.in/api/users/2"...................passed
+And Test put request "https://reqres.in/api/users/2"......................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Registration" name="Valid Registration" time="12.307835495">
+    <system-out><![CDATA[Given User Launch the URL.................................................passed
+And Click on Register link................................................passed
+And Enter the mandatory details...........................................passed
+And Click Next and confirm................................................passed
+Then Verify the Registration page.........................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Authentication test for Cyclos" name="Login should be valid" time="9.982148596999998">
+    <system-out><![CDATA[Given User navigate to login page.........................................passed
+And Enter the username and password "demo" and "1234".....................passed
+And Click the submit......................................................passed
+And Click the user payment option.........................................passed
+And I perform the user payment............................................passed
+And I click the confirm button............................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Cart product validation" name="Select max and min price products with using filter" time="2.7747120960000005">
+    <system-out><![CDATA[Given User navigate to the login page.....................................passed
+And Enter the username and password as "standard_user" and "secret_sauc...passed
+And Click the submit button...............................................passed
+Then Verify the Home page.................................................passed
+And verify the product item...............................................passed]]></system-out>
+  </testcase>
+  <testcase classname="User Authentication test" name="Login should be valid" time="1.191416597">
+    <system-out><![CDATA[Given User navigate to the login page.....................................passed
+And Enter the username and password as "standard_user" and "secret_sauc...passed
+And Click the submit button...............................................passed
+Then Verify the Home page.................................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Select Product without Filter" name="Select max and min price products without using filter" time="3.2241672899999996">
+    <system-out><![CDATA[Given User navigate to the login page.....................................passed
+And Enter the username and password as "standard_user" and "secret_sauc...passed
+And Click the submit button...............................................passed
+Then Verify the Home page.................................................passed
+Given Select min or max price product and click add to cart button valu...passed
+And verify the MyCart page URL............................................passed
+And verify two of the products in MyCart and click checkout button........passed
+And verify the checkout page URL..........................................passed
+And User enter checkout information and click continue button.............passed
+And verify the overview page URL..........................................passed
+And Verify paying and shipping information in overview page...............passed
+And Click Finish button to confirm your order.............................passed
+And Verify the checkout-complete page URL.................................passed
+Then User take final order confirmation screenshot........................passed]]></system-out>
+  </testcase>
+  <testcase classname="Select Product with Filter" name="Select max and min price products with using filter" time="2.585196995">
+    <system-out><![CDATA[Given User navigate to the login page.....................................passed
+And Enter the username and password as "standard_user" and "secret_sauc...passed
+And Click the submit button...............................................passed
+Then Verify the Home page.................................................passed
+Given Using filter to select the products.................................passed
+And verify the MyCart page URL............................................passed
+And Click checkout button.................................................passed
+And verify the checkout page URL..........................................passed
+And User enter checkout information and click continue button.............passed
+And verify the overview page URL..........................................passed
+And Click Finish button to confirm your order.............................passed
+And Verify the checkout-complete page URL.................................passed
+Then User take final order confirmation screenshot........................passed]]></system-out>
+  </testcase>
+</testsuite>

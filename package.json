@@ -1,0 +1,27 @@
+{
+  "name": "playwrighttypescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js test",
+    "test1": "cucumber-js test --tags @Jeyagandhi_LoginValidation",
+    "failedTC": "cucumber-js test --tags  @fails",
+    "REGTC": "cucumber-js test --tags  @REG"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^20.14.10",
+    "multiple-cucumber-html-reporter": "^3.6.2"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "cucumber": "^6.0.7",
+    "date-fns": "^4.1.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.14.2"
+  }
+}
