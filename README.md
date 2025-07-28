@@ -1,2 +1,0 @@
-# PlaywrightTSM
-Playwright With Typescript
