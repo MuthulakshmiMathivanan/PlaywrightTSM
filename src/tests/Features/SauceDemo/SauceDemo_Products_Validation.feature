@@ -6,7 +6,7 @@ Background:
     And Click the submit button
     Then Verify "Yes" the Home page
 
-@jaishree_Web_Productverification @REG
+
 Scenario: Validation of maximum and minimum price products in saucedemo application
     And Add first product to chart
     And second product to chart

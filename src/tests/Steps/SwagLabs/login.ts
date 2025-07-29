@@ -9,6 +9,7 @@ let swagLogin:cyclosloginPage;
    // swagLogin=new cyclosloginPage();
     Loginpage=new loginPage();
      Loginpage.navigate(URL);
+     //await this.page.screenshot({ path: 'screenshots/example.png', fullPage: true });
   });
   When('Enter the username and password as {string} and {string}', async function (username, password) {
     await Loginpage.enterUsername(username);

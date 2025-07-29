@@ -6,7 +6,7 @@ Background:
     And Click the submit button
     Then Verify "Yes" the Home page
     
-@jaishree_Web_Filterproducts  @REG
+
 Scenario: Validation of checkout functionality in saucedemo application
     Given Using filter to select the products
     And verify the MyCart page URL

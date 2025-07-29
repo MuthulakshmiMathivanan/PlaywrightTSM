@@ -1,6 +1,6 @@
 Feature:SauceDemo_Login_Functionality
 
-@magesh_Web_Login @login @REG
+
     Scenario Outline:Validation of user registration in saucedemo application
         Given User navigate to the login page with "https://www.saucedemo.com/v1/"
         And Enter the username and password as '<username>' and '<password>'

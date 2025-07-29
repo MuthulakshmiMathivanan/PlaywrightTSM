@@ -6,7 +6,7 @@ Background:
     And Click the submit button
     Then Verify "Yes" the Home page
     
-@magesh_Web_Productwithoutfilters @REG
+
 Scenario: Validation of shipment and payment functionality in saucedemo
     Given Select min or max price product and click add to cart button value "MAX"
     And verify the MyCart page URL
